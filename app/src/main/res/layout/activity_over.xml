@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="36dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="获胜者"
+            android:textColor="@color/sky_400"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/winner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/white_alpha_80"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/white_alpha_80"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/white_alpha_80"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_primary"
+            android:text="返回主菜单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</LinearLayout>

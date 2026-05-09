@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="选择模式"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/offline_btn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_primary"
+            android:text="单机模式"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/online_btn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/button_secondary"
+            android:text="联机对战"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</LinearLayout>

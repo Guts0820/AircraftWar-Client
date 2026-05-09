@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:text="排行榜"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- 表头 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:background="#330EA5E9"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="serif"
+                android:text="用户"
+                android:textAlignment="center"
+                android:textColor="@color/sky_400"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="serif"
+                android:text="分数"
+                android:textAlignment="center"
+                android:textColor="@color/sky_400"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:divider="#22FFFFFF"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_width="160dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_primary"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</LinearLayout>

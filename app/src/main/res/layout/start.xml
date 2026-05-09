@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="飞机大战"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        android:shadowColor="#33000000"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_primary"
+        android:text="开始游戏"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:elevation="4dp" />
+
+</LinearLayout>
