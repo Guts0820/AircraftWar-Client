@@ -76,7 +76,7 @@ public class RankingActivity extends AppCompatActivity {
 
     public void showList(){
 
-        String[] simpleCursor = new String[] {"name", "score", "time"};
+        String[] simpleCursor = new String[] {"name", "score"};
 
         try {
             playerList = userDao.getAllData();
@@ -90,13 +90,12 @@ public class RankingActivity extends AppCompatActivity {
             Map<String, String> curMap = new HashMap<>();
             curMap.put("name", curPlayer.getName());
             curMap.put("score", String.valueOf(curPlayer.getScore()));
-            curMap.put("time", curPlayer.getTime());
             maps.add(curMap);
         }
 
         SimpleAdapter adapter = new SimpleAdapter(
                 this, maps, R.layout.ranking_item,
-                simpleCursor, new int[] {R.id.name, R.id.score, R.id.time}
+                simpleCursor, new int[] {R.id.name, R.id.score}
         );
 
         /**
